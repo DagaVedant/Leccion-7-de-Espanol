@@ -172,16 +172,15 @@ export const VocabularySection: React.FC<VocabularySectionProps> = ({
           </div>
           <div>
             <h1 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">
-              Sección de Vocabulario
+              Vocabulario
             </h1>
             <h2 className="text-base font-semibold text-slate-500 uppercase tracking-wider">
-              Professions Vocabulary (Grade: 30%)
+              Professions Vocab (Grade: 25%)
             </h2>
           </div>
         </div>
         <p className="text-sm text-slate-600 mt-2 italic border-t border-slate-100 pt-3">
-          Completa las tres actividades abajo para demostrar tu dominio de las profesiones. Cada actividad provee retroalimentación inmediata.
-          (Complete the three activities below to demonstrate your mastery of professions. Each activity provides instant feedback.)
+          Completa las tres actividades abajo para demostrar tu dominio de las profesiones. (Complete the three activities below to demonstrate your mastery of professions.)
         </p>
       </div>
 
@@ -193,7 +192,7 @@ export const VocabularySection: React.FC<VocabularySectionProps> = ({
               Actividad 1
             </span>
             <h3 className="text-lg font-bold text-slate-800 inline-block">
-              🧩 Rellenar los Espacios (Fill in the Blank)
+              Fill in the Blank
             </h3>
           </div>
           <div className="flex items-center gap-2">
@@ -212,8 +211,7 @@ export const VocabularySection: React.FC<VocabularySectionProps> = ({
         </div>
 
         <p className="text-sm text-slate-600 mb-6">
-          Escribe el nombre de la profesión correcta en español (incluye el artículo: <strong>El</strong>).
-          (Type the correct profession in Spanish, including the article 'El'.)
+          Escribe el nombre de la profesión correcta en español (incluye el artículo: <strong>El o La</strong>).
         </p>
 
         <div className="space-y-6">
@@ -276,7 +274,7 @@ export const VocabularySection: React.FC<VocabularySectionProps> = ({
             onClick={handleAct1Check}
             className="mt-6 bg-[#4A90E2] hover:bg-[#357ABD] text-white font-bold px-6 py-2 rounded-lg shadow-md transition-all cursor-pointer"
           >
-            Verificar Respuestas (Check Answers)
+            Verificar (Check)
           </button>
         )}
       </div>
@@ -289,7 +287,7 @@ export const VocabularySection: React.FC<VocabularySectionProps> = ({
               Actividad 2
             </span>
             <h3 className="text-lg font-bold text-slate-800 inline-block">
-              🔗 Emparejar Términos (Matching Spanish → English)
+              Matching
             </h3>
           </div>
           <div className="flex items-center gap-2">
@@ -308,8 +306,7 @@ export const VocabularySection: React.FC<VocabularySectionProps> = ({
         </div>
 
         <p className="text-sm text-slate-600 mb-6">
-          Haz clic en una palabra en español, y luego haz clic en su traducción correspondiente en inglés.
-          (Click a Spanish word, then click its English translation to pair them. Checked instantly!)
+          Haz clic en una palabra en español, y luego haz clic en su traducción.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
@@ -387,7 +384,7 @@ export const VocabularySection: React.FC<VocabularySectionProps> = ({
         
         {scoreState.vocabActivity2.completed && (
           <div className="mt-4 p-3 bg-green-50 border border-[#3CB371] text-[#3CB371] text-center font-bold rounded-xl">
-            🎉 ¡Excelente! Emparejaste correctamente todas las profesiones.
+            ¡Excelente! Emparejaste correctamente todas las profesiones.
           </div>
         )}
       </div>
@@ -400,7 +397,7 @@ export const VocabularySection: React.FC<VocabularySectionProps> = ({
               Actividad 3
             </span>
             <h3 className="text-lg font-bold text-slate-800 inline-block">
-              🖼️ Reconocimiento de Iconos (Image/Icon Matching)
+              Match the Image
             </h3>
           </div>
           <div className="flex items-center gap-2">
@@ -419,8 +416,7 @@ export const VocabularySection: React.FC<VocabularySectionProps> = ({
         </div>
 
         <p className="text-sm text-slate-600 mb-6">
-          Identifica la profesión correcta que representa cada icono seleccionándola del menú desplegable.
-          (Identify the correct profession for each icon by selecting it from the dropdown menu.)
+          Identifica la profesión correcta del icono
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">

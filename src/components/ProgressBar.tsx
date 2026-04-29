@@ -82,7 +82,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ scoreState, currentSec
       <div className="flex-1 text-center md:text-left space-y-2">
         <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1">
           <h3 className="text-lg font-black text-slate-800 flex items-center justify-center md:justify-start gap-1.5">
-            🎯 Progreso Global vs Sección
+            Progreso General
           </h3>
           {currentSectionId && (
             <span className="text-xs font-bold text-slate-400 bg-slate-50 border border-slate-100 px-2.5 py-1 rounded-md">
