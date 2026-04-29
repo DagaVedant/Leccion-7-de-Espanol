@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 import { viteSingleFile } from 'vite-plugin-singlefile'
 
 export default defineConfig({
-  plugins: [react(), viteSingleFile()],
-  base: './',
+  base: '/Leccion-7-de-Espanol/',  // must match your repo name exactly
+  plugins: [react()],
 })
