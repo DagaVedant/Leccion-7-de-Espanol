@@ -1,1 +1,164 @@
+@import url('https://fonts.googleapis.com/...');
 @import "tailwindcss";
+
+:root {
+  --crimson: #C0392B;
+  --crimson-dark: #96281B;
+  --crimson-light: #E74C3C;
+  --gold: #D4A017;
+  --gold-light: #F1C40F;
+  --gold-pale: #FEF9E7;
+  --navy: #1A2744;
+  --navy-mid: #2C3E6B;
+  --slate-ink: #2D3436;
+  --cream: #FDFAF4;
+  --cream-warm: #F9F3E8;
+  --cream-border: #EDE8DC;
+  --green-vivid: #27AE60;
+  --green-light: #EAFAF1;
+  --red-vivid: #E74C3C;
+  --red-light: #FDEDEC;
+  --blue-accent: #2980B9;
+  --blue-light: #EBF5FB;
+  --shadow-soft: 0 2px 16px rgba(26,39,68,0.08);
+  --shadow-card: 0 4px 24px rgba(26,39,68,0.12);
+  --shadow-lift: 0 8px 32px rgba(26,39,68,0.16);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--cream);
+  color: var(--slate-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--cream);
+  min-height: 100vh;
+}
+
+/* Typography */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-mono-custom {
+  font-family: 'DM Mono', monospace;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid var(--cream-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.card-elevated {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid var(--cream-border);
+  box-shadow: var(--shadow-card);
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--crimson);
+  color: white;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px rgba(192,57,43,0.3);
+}
+
+.btn-primary:hover {
+  background: var(--crimson-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(192,57,43,0.4);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--slate-ink);
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 10px;
+  border: 1.5px solid var(--cream-border);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+}
+
+.btn-secondary:hover {
+  border-color: var(--crimson);
+  color: var(--crimson);
+  background: #FEF5F5;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #888;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--cream-border);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.btn-ghost:hover {
+  background: var(--cream-warm);
+  color: var(--slate-ink);
+  border-color: #ccc;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-gold { background: #FEF3CD; color: #8A6100; }
+.badge-green { background: var(--green-light); color: var(--green-vivid); }
+.badge-grey { background: #F0F0F0; color: #888; }
+.badge-crimson { background: #FDEDEC; color: var(--crimson); }
+.badge-navy { background: #EBF0FA; color: var(--navy); }
+
+/* Nav */
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #666;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.nav-btn:hover { background: var(--cream-warm); color: var(--slate-ink); }
+.nav-btn.active { background: var(--cream-warm); color: var(--slate-ink); font-weight: 700; }
