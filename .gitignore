@@ -3,7 +3,8 @@ node_modules/
 .pnp
 .pnp.js
 
-# Build output
+# Build output (Vite builds to dist/, not build/)
+dist/
 build/
 
 # Environment files
