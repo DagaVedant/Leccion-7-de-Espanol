@@ -28,7 +28,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ scoreState, currentSec
   );
 
   // Derive Current Section Stats
-  let sectionLabel = 'Inicio';
+  let sectionLabel = 'Home';
   let sectionScoreString = '';
   let sectionPercentage = 0;
 
