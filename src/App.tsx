@@ -335,7 +335,7 @@ export default function App() {
                   Leccion 7 - Profesiones y Tiempos Verbales
                 </h1>
                 <p className="text-sm font-bold text-[#4A90E2] uppercase tracking-widest mt-1">
-                  Interactive Spanish Review Assignment
+                  By: Vedant D, Ishan P, Nikita B, Shriya S
                 </p>
                 <p className="text-slate-600 mt-4 max-w-3xl text-sm md:text-base leading-relaxed">
                   Bienvenido! Press one of the 4 topics to get started and complete the activities. 
