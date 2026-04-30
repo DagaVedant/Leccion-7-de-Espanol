@@ -273,9 +273,6 @@ export default function App() {
                 <span className="font-black text-xs md:text-sm tracking-tight text-slate-800 leading-none">
                   PROFESIONES Y TIEMPOS VERBALES
                 </span>
-                <span className="font-bold text-[10px] md:text-xs text-[#4A90E2] tracking-wider leading-none mt-0.5">
-                  ASSIGNMENT MODE
-                </span>
               </div>
             </div>
 
@@ -284,7 +281,7 @@ export default function App() {
                 onClick={() => setActiveSection('dashboard')}
                 className={`px-3 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer transition-all ${activeSection === 'dashboard' ? 'bg-slate-100 text-slate-900 font-bold' : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'}`}
               >
-                <HomeIcon size={16} /> Panel
+                <HomeIcon size={16} /> Inicio
               </button>
               
               {sectionsList.map(s => (
@@ -302,7 +299,7 @@ export default function App() {
                 onClick={() => setActiveSection('grading')}
                 className={`px-3 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer transition-all ${activeSection === 'grading' ? 'bg-green-100 text-green-800 font-bold' : 'text-[#E76F51] font-semibold hover:bg-red-50'}`}
               >
-                <TrophyIcon size={16} /> Entregar
+                <TrophyIcon size={16} /> Terminado
               </button>
             </nav>
 
@@ -335,13 +332,13 @@ export default function App() {
               <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md border border-slate-100 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#FFF6CC] rounded-full -mr-12 -mt-12 opacity-50 mix-blend-multiply"></div>
                 <h1 className="text-2xl md:text-4xl font-black text-slate-800 leading-tight">
-                  Profesiones y Tiempos Verbales en Acción
+                  Leccion 7 - Profesiones y Tiempos Verbales
                 </h1>
                 <p className="text-sm font-bold text-[#4A90E2] uppercase tracking-widest mt-1">
-                  Interactive Graded Assignment Platform
+                  Interactive Spanish Review Assignment
                 </p>
                 <p className="text-slate-600 mt-4 max-w-3xl text-sm md:text-base leading-relaxed">
-                  Bienvenido al portal de asignación. Explora el vocabulario de profesiones y domina los tiempos verbales en español.
+                  Bienvenido! Press one of the 4 topics to get started and complete the activities. 
                 </p>
 
                 {isAllCompleted && (
@@ -356,7 +353,7 @@ export default function App() {
 
               <div className="bg-white rounded-2xl p-5 md:p-6 shadow-md border border-slate-100">
                 <h3 className="text-lg font-bold text-slate-800 border-b border-slate-100 pb-3 mb-4">
-                  📋 Lista de Tareas (Assignment Checklist)
+                  Lista de Tareas (Assignment List)
                 </h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -439,7 +436,7 @@ export default function App() {
                   onClick={() => setActiveSection('dashboard')}
                   className="inline-flex items-center gap-1.5 text-xs font-bold bg-white hover:bg-slate-50 border border-slate-200 text-slate-500 hover:text-slate-800 px-4 py-2 rounded-lg cursor-pointer shadow-sm transition-all"
                 >
-                  <HomeIcon size={14} /> Volver al Inicio
+                  <HomeIcon size={14} /> Inicio
                 </button>
               </div>
             </div>
@@ -491,25 +488,22 @@ export default function App() {
                 Task Completed Fully
               </p>
               <div className="border-t border-dashed border-slate-100 my-4 pt-4">
-                <p className="text-xl md:text-2xl font-black bg-gradient-to-r from-[#4A90E2] to-[#3CB371] text-transparent bg-clip-text italic">
-                  “Tu futuro empieza hoy.”
-                </p>
               </div>
               <p className="text-xs text-slate-500 mb-6 leading-relaxed px-4">
-                Has completado exitosamente todas las secciones requeridas. Tus resultados se han consolidado satisfactoriamente.
+                Has completado
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <button
                   onClick={() => setActiveSection('dashboard')}
                   className="flex items-center gap-1.5 text-xs font-bold bg-white hover:bg-slate-50 border border-slate-200 text-slate-600 hover:text-slate-800 px-4 py-2.5 rounded-xl cursor-pointer shadow-sm transition-all w-full sm:w-auto justify-center"
                 >
-                  <HomeIcon size={14} /> Volver al Inicio
+                  <HomeIcon size={14} /> Inicio
                 </button>
                 <button
                   onClick={handleRetryAll}
                   className="flex items-center gap-1.5 text-xs font-bold bg-[#E76F51] hover:bg-[#d55b3c] text-white px-4 py-2.5 rounded-xl cursor-pointer shadow-md transition-all w-full sm:w-auto justify-center"
                 >
-                  <RefreshCwIcon size={14} /> Reiniciar Todo
+                  <RefreshCwIcon size={14} /> Reiniciar
                 </button>
               </div>
             </div>
